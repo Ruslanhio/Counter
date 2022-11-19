@@ -1,26 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import {SetCounter} from './components/SetCounter/SetCounter';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export function App() {
+    const [maxValue, setMaxValue] = useState<number>(0)
+    const [startValue, setStartValue] = useState<number>(0)
+    const [count, setCount] = useState<number>(0)
+    return (
+        <div className="App">
+            <SetCounter count={count} setCount={setCount} startValue={startValue} maxValue={maxValue} setStartValue={setStartValue} setMaxValue={setMaxValue}/>
+        </div>
+    );
 }
 
-export default App;
+

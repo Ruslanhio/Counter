@@ -1,0 +1,6 @@
+.number {
+    font-size: 70px;
+}
+.number.active {
+    color: red
+}
