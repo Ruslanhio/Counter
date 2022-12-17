@@ -6,12 +6,31 @@
 
 }
 .cnt {
-
     width: 100%;
-    border: 2px solid aqua;
+    border: 3px solid aqua;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+.button{
+    display: flex;
+    column-gap: 20px;
 }
 
 .button button {
-min-width: 45px;
-
+    font-weight: 700;
+    min-width: 80px;
+    padding: 8px 0px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: 0px solid transparent;
+    transition: .3s all;
+}
+.button button:hover{
+    background-color: aqua;
+    color: black;
 }

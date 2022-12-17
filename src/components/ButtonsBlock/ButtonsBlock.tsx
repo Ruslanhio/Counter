@@ -12,7 +12,7 @@ type ButtonsBlockType = {
 }
 
 export const ButtonsBlock = (props: ButtonsBlockType) => {
-    const increment = () => props.setCount(props.count + 1)
+    const increment = () => props.setCount(++props.startValue )
     const zeroing = () => props.setCount(props.startValue)
     return (
         <div className={s.block}>

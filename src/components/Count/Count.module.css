@@ -1,6 +1,25 @@
 .number {
-    font-size: 70px;
+    font-size: 120px;
+    font-weight: 700;
+    border: 3px solid aqua;
+    border-radius: 20px;
+}
+.number h1{
 }
 .number.active {
+    color: red;
+}
+.input{
+    display: block;
+}
+.button{
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+}
+
+.error {
     color: red
 }
+
+
